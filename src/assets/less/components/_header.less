@@ -1,0 +1,121 @@
+header {
+  background-color: @black-color;
+  height: 2.9375em;
+  position: relative;
+  z-index: 2;
+  .laptop({
+    height: 2.375em
+  });
+  .mobile({
+    height: 3.125em
+  });
+
+  .header__content {
+    width: 100%;
+    padding: 0 11.5625em;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    position: relative;
+    .laptop({
+      padding: 0 0.9375em;
+    });
+
+    .logo {
+      color: @white-color;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 1.8rem;
+      letter-spacing: -0.0625em;
+      .laptop({
+        font-size: 1.8rem;
+      });
+      .mobile({
+        letter-spacing: 0.0313em;
+      });
+    }
+
+    .header__text {
+      color: @white-color;
+      font-size: 1.6rem;
+      letter-spacing: 0.0938em;
+      margin-right: 2em;
+      margin-top: 0.1875em;
+
+      &:hover {
+        text-decoration: underline;
+      }
+
+      .laptop({
+        font-size: 1.3rem;
+        margin-right: 1.125em;
+      });
+    }
+
+    .cart {
+      position: relative;
+      .laptop({
+        width: 2.0625em;
+        height: 1.4375em;
+      });
+
+      .count {
+        width: 1.4375em;
+        height: 1.4375em;
+        text-align: center;
+        line-height: 1.4375em;
+        border-radius: 50%;
+        background-color: @white-color;
+        color: @black-color;
+        position: absolute;
+        right: 1.25em;
+        border: 0.0625em solid @black-color;
+        .laptop({
+          width: 1.5em;
+          height: 1.5em;
+          top: -0.25em;
+          line-height: 1.5em;
+          right: 0.8125em;
+        });
+      }
+    }
+  }
+
+  .burger-menu {
+    flex-direction: column;
+    cursor: pointer;
+
+    .burger-menu__item1,
+    .burger-menu__item2,
+    .burger-menu__item3 {
+      width: 1.875em;
+      height: 0.3125em;
+      background-color: @white-color;
+      margin-bottom: 0.1875em;
+      transition: 0.4s;
+      .laptop({
+        height: 0.1875em;
+      });
+    }
+  }
+}
+
+.mobile-header {
+  display: none;
+}
+
+.desktop-header {
+  .mobile({
+    display: none;
+  })
+
+}
+
+.mobile-header {
+  .mobile({
+    display: flex;
+  })
+}
+

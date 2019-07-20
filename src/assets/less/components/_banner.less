@@ -1,0 +1,64 @@
+.banner {
+  width: 100%;
+  position: relative;
+  .mobile({
+    z-index: 2
+  });
+
+  .slide {
+    display: none;
+    width: 100%;
+    background-color: @grey-color;
+    color: @white-color;
+    font-weight: bold;
+    font-size: 0.7rem;
+    height: 0.9375em;
+    letter-spacing: 0.1rem;
+    align-items: center;
+    justify-content: center;
+    .mobile({
+      height: 1.25em;
+      font-size: 0.6rem;
+      padding: 0;
+    });
+  }
+
+  .dots {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 11.5625em;
+    .mobile({
+      display: none;
+    });
+
+    .active {
+      background-color: @black-color;
+    }
+
+    .dot {
+      cursor: pointer;
+      height: 0.5em;
+      width: 0.5em;
+      margin: 0 0.125em;
+      border: 0.0625em solid @black-color;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.6s ease;
+
+      &:hover {
+        background-color: @black-color;
+      }
+    }
+  }
+
+  .banner__text {
+    .mobile({
+      font-size: 0.7rem;
+    });
+
+  }
+
+}
+
+

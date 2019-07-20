@@ -1,0 +1,165 @@
+.insta-gallery {
+  padding: 0 11.5625em;
+  padding-top: 0.875em;
+  padding-bottom: 1.375em;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  .laptop({
+    padding: 0 6.25em;
+    margin-top: 1em;
+    margin-bottom: -0.4375em;
+  });
+
+  .wrapper-all {
+    justify-content: space-between;
+    width: 100%;
+
+    &:before,
+    &:after {
+      .mobile({
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        width: 8.4375em;
+        background: rgba(255, 255, 255, 0.62);
+        z-index: 3;
+      });
+    }
+
+    &:before {
+      .mobile({
+        right: 0;
+        width: 7.3125em
+      });
+      .mobile({
+        width: 5.1875em
+      });
+    }
+
+    &:after {
+      .mobile({
+        left: 0;
+        width: 7.3125em
+      });
+      .mobile({
+        width: 5.1875em
+      });
+    }
+
+    .mobile({
+      width: auto;
+    });
+
+    .wrapper-all__carousel {
+      transform: matrix(1, 0, 0, 1, 0, 0);
+      width: 100%;
+      justify-content: space-around;
+    }
+
+    .wrapper-img {
+      width: 14.0625em;
+      height: 14.1875em;
+      position: relative;
+      cursor: pointer;
+      .laptop({
+        width: 8.75em;
+        height: 8.75em;
+      });
+
+      .mobile({
+        width: 8.4375em;
+        height: 8.4375em;
+        margin-right: 1.25em;
+      });
+
+      .block {
+        .cover {
+          width: 100%;
+          height: 100%;
+        }
+
+        .block-bg {
+          position: absolute;
+          left: 0;
+          bottom: 0;
+          right: 0;
+          top: 0;
+          width: 100%;
+          height: 100%;
+          display: none;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+
+          .img-like {
+            margin-right: 0.8125em;
+            margin-top: 0.9375em;
+          }
+
+          .count-likes {
+            color: @white-color;
+            font-size: 1.5em;
+            margin-right: 0.1875em;
+          }
+        }
+
+        &:hover .cover {
+          opacity: 0.3;
+          transition: all 1s;
+        }
+
+        &:hover .img-like {
+          transition: all 2s;
+        }
+      }
+
+      &:hover .block-bg {
+        display: flex;
+      }
+
+      &:hover .block {
+        background-color: rgba(0, 0, 0, 0.8);
+        transition: all 1s;
+      }
+    }
+
+    .bottom-row {
+      width: 17.5em;
+      height: 17.5em;
+      .laptop({
+        width: 10.625em;
+        height: 10.625em;
+      });
+    }
+  }
+
+  .laptop({
+    padding: 0 0.9375em;
+  });
+  .mobile ({
+    padding: 0;
+    position: relative;
+  });
+}
+
+.quem-usa {
+  .wrapper-all {
+    &:before,
+    &:after {
+      .mobile({
+        width: 4.0625em;
+      });
+    }
+
+    .wrapper-all__carousel {
+      .small({
+        transform: matrix(1, 0, 0, 1, 115, 0)
+      });
+    }
+  }
+}
+

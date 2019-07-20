@@ -1,0 +1,17 @@
+.laptop(@rules) {
+  @media (max-width: @breakpoint-medium) {
+    @rules();
+  }
+}
+
+.mobile(@rules) {
+  @media (max-width: @breakpoint-semi-med) {
+    @rules();
+  }
+}
+
+.small(@rules) {
+  @media (max-width: @breakpoint-small) {
+    @rules();
+  }
+}

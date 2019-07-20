@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Cloth&Fashion</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Rajdhani:400,500,600,700&display=swap" rel="stylesheet">
+</head>
+<body>
+<header class="mobile-header container">
+    <div class="header__content">
+        <div class="burger-menu">
+            <div class="burger-menu__item1"></div>
+            <div class="burger-menu__item2"></div>
+            <div class="burger-menu__item3"></div>
+        </div>
+        <a class="logo super-bold">CLOTH&FASHION</a>
+        <div class="user-info">
+            <div class="cart">
+                <a href="#">
+                    <span class="count bold">88</span>
+                    <img src="images/iconCarrinho.png" alt="cart">
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="overlay"></div>
+    <div class="modal-content basket">
+        <header class="basket__header">
+            <div class="header__content">
+                <a href="#" class="header__title">meu carrinho</a>
+                <div class="cart">
+                    <a href="#">
+                        <span class="count bold">88</span>
+                        <img src="images/iconCarrinho.png" alt="cart">
+                    </a>
+                </div>
+            </div>
+        </header>
+        <div class="basket-content">
+            <div class="product-about">
+                <img src="images/prod_3.jpg" alt="product" class="product-img">
+                <div class="product-info">
+                    <div class="product-info">
+                        <h1 class="product-name">Nome do Produto</h1>
+                        <button class="product-delete">X</button>
+                    </div>
+                    <div class="product-color"></div>
+                    <div class="product-price">
+                        <div class="counter">
+                            <button class="minus">-</button>
+                            <input type="number" class="product-count" value="88" min="1" max="100">
+                            <button class="add">+</button>
+                        </div>
+                        <div class="total-product-price">R$88,88</div>
+                    </div>
+                </div>
+            </div>
+            <div class="product-about">
+                <img src="images/prod_3.jpg" alt="product-card" class="product-img">
+                <div class="product-info">
+                    <div class="product-info">
+                        <h1 class="product-name">Nome do Produto</h1>
+                        <button class="product-delete">X</button>
+                    </div>
+                    <div class="product-color"></div>
+                    <div class="product-price">
+                        <div class="counter">
+                            <button class="minus">-</button>
+                            <input type="number" class="product-count" value="88" min="1" max="100">
+                            <button class="add">+</button>
+                        </div>
+                        <div class="total-product-price">R$88,88</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="total-price">
+            <span class="total-price__title">total</span>
+            <span class="price">R$88,88</span>
+        </div>
+        <footer class="basket__footer">
+            <div class="footer-block">CONTINUAR COMPRANDO</div>
+            <div class="footer-checkout">
+                <span>checkout</span>
+                <span class="symbol">&rsaquo;</span>
+            </div>
+        </footer>
+    </div>
+    <div class="modal-content menu">
+        <header class="menu__header header">
+            <div class="header__content">
+                <a href="#" class="header__title">menu</a>
+                <button class="close-modal">&#10006;</button>
+            </div>
+        </header>
+        <section class="menu__search search">
+            <input type="search" placeholder="O QUE ESTÁ PROCURANDO?" class="search__input">
+            <button class="search__button">
+                <img src="images/search.png" alt="search" class="search-img">
+            </button>
+        </section>
+        <ul class="menu__content">
+            <li class="menu__link link">
+                <p class="link__content">
+                    <span class="link__title">sobre</span>
+                    <span class="link__open">+</span>
+                </p>
+                <ul class="sub-menu">
+                    <li class="sub-menu">
+                        <span class="link__title">categoria</span>
+                        <span class="link__open">&rsaquo;</span>
+                    </li>
+                    <li class="sub-menu">
+                        <span class="link__title">categoria</span>
+                        <span class="link__open">&rsaquo;</span>
+                    </li>
+                    <li class="sub-menu">
+                        <span class="link__title">categoria</span>
+                        <span class="link__open">&rsaquo;</span>
+                    </li>
+                    <li class="sub-menu">
+                        <span class="link__title">categoria</span>
+                        <span class="link__open">&rsaquo;</span>
+                    </li>
+                </ul>
+            </li>
+            <li class="menu__link link">
+                <p class="link__content">
+                    <span class="link__title">COLEÇÕES</span>
+                    <span class="link__open">+</span>
+                </p>
+                <ul class="sub-menu">
+                    <li class="sub-menu">
+                        <span class="link__title">categoria</span>
+                        <span class="link__open">&rsaquo;</span>
+                    </li>
+                    <li class="sub-menu">
+                        <span class="link__title">categoria</span>
+                        <span class="link__open">&rsaquo;</span>
+                    </li>
+                    <li class="sub-menu">
+                        <span class="link__title">categoria</span>
+                        <span class="link__open">&rsaquo;</span>
+                    </li>
+                    <li class="sub-menu">
+                        <span class="link__title">categoria</span>
+                        <span class="link__open">&rsaquo;</span>
+                    </li>
+                </ul>
+            </li>
+            <li class="menu__link link">
+                <p class="link__content">
+                    <span class="link__title">CATEGORIA</span>
+                    <span class="link__open">+</span>
+                </p>
+                <ul class="sub-menu">
+                    <li class="sub-menu">
+                        <span class="link__title">categoria</span>
+                        <span class="link__open">&rsaquo;</span>
+                    </li>
+                    <li class="sub-menu">
+                        <span class="link__title">categoria</span>
+                        <span class="link__open">&rsaquo;</span>
+                    </li>
+                    <li class="sub-menu">
+                        <span class="link__title">categoria</span>
+                        <span class="link__open">&rsaquo;</span>
+                    </li>
+                    <li class="sub-menu">
+                        <span class="link-title">categoria</span>
+                        <span class="link__open">&rsaquo;</span>
+                    </li>
+                </ul>
+            </li>
+            <li class="menu__link link">
+                <p class="link__content">
+                    <span class="link__title">LOOKS</span>
+                    <span class="link__open">+</span>
+                </p>
+                <ul class="sub-menu">
+                    <li class="sub-menu">
+                        <span class="link__title">categoria</span>
+                        <span class="link__open">&rsaquo;</span>
+                    </li>
+                    <li class="sub-menu">
+                        <span class="link__title">categoria</span>
+                        <span class="link__open">&rsaquo;</span>
+                    </li>
+                    <li class="sub-menu">
+                        <span class="link__title">categoria</span>
+                        <span class="link__open">&rsaquo;</span>
+                    </li>
+                    <li class="sub-menu">
+                        <span class="link__title">categoria</span>
+                        <span class="link__open">&rsaquo;</span>
+                    </li>
+                </ul>
+            </li>
+            <li class="menu__link">
+                <p class="link__content">
+                    <span class="link__title">CONTATO</span>
+                    <span class="link__open">+</span>
+                </p>
+                <ul class="sub-menu">
+                    <li class="sub-menu">
+                        <span class="link__title">categoria</span>
+                        <span class="link__open">&rsaquo;</span>
+                    </li>
+                    <li class="sub-menu">
+                        <span class="link__title">categoria</span>
+                        <span class="link__open">&rsaquo;</span>
+                    </li>
+                    <li class="sub-menu">
+                        <span class="link__title">categoria</span>
+                        <span class="link__open">&rsaquo;</span>
+                    </li>
+                    <li class="sub-menu">
+                        <span class="link__title">categoria</span>
+                        <span class="link__open">&rsaquo;</span>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        <footer class="menu__footer">
+            <ul class="footer-items">
+                <li><a href="#" class="footer-item"><img src="images/fb-b.png" alt="facebook"></a></li>
+                <li><a href="#" class="footer-item"><img src="images/twi-b.png" alt="twitter"></a></li>
+                <li><a href="#" class="footer-item"><img src="images/insta-b.png" alt="instagram"></a></li>
+            </ul>
+        </footer>
+    </div>
+</header>
+<section class="banner container">
+    <div class="slide fade">
+        <p class="banner__text">FRETE GRÁTIS PARA COMPRAS ACIMA DE R$300,00</p>
+    </div>
+    <div class="slide fade">
+        <p class="banner__text">FRETE GRÁTIS PARA COMPRAS ACIMA DE R$300,00</p>
+    </div>
+    <div class="slide fade">
+        <p class="banner__text">FRETE GRÁTIS PARA COMPRAS ACIMA DE R$300,00</p>
+    </div>
+    <div class="dots">
+        <span class="dot active"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+    </div>
+</section>
+<section class="slider container">
+    <div class="slideshow-container">
+        <div class="slide fade">
+            <img src="images/slider.jpg" class="slide-img">
+            <div class="slide__info info">
+                <h1 class="info__title"><span class="super-bold">C&F</span> CLOTHING</h1>
+                <h2 class="info__s-title">Sports & Lifestyle</h2>
+                <button class="btn__confira">confira</button>
+            </div>
+        </div>
+        <div class="slide fade">
+            <img src="images/slider.jpg" class="slide-img">
+            <div class="slide__info info">
+                <h1 class="info__title"><span class="super-bold">C&F</span> CLOTHING</h1>
+                <h2 class="info__s-title">Sports & Lifestyle</h2>
+                <button class="btn__confira">confira</button>
+            </div>
+        </div>
+        <div class="slide fade">
+            <img src="images/slider.jpg" class="slide-img">
+            <div class="slide__info info">
+                <h1 class="info__title"><span class="super-bold">C&F</span> CLOTHING</h1>
+                <h2 class="info__s-title">Sports & Lifestyle</h2>
+                <button class="btn__confira">confira</button>
+            </div>
+        </div>
+        <div class="slide fade">
+            <img src="images/slider.jpg" class="slide-img">
+            <div class="slide__info info">
+                <h1 class="info__title"><span class="super-bold">C&F</span> CLOTHING</h1>
+                <h2 class="info__s-title">Sports & Lifestyle</h2>
+                <button class="btn__confira">confira</button>
+            </div>
+        </div>
+        <div class="slide fade">
+            <img src="images/slider.jpg" class="slide-img">
+            <div class="slide__info info">
+                <h1 class="info__title"><span class="super-bold">C&F</span> CLOTHING</h1>
+                <h2 class="info__s-title">Sports & Lifestyle</h2>
+                <button class="btn__confira">confira</button>
+            </div>
+        </div>
+        <div class="dots">
+            <span class="dot active first-slide"></span>
+            <span class="dot second-slide"></span>
+            <span class="dot third-slide"></span>
+            <span class="dot fourth-slide"></span>
+            <span class="dot fifth-slide"></span>
+        </div>
+    </div>
+</section>
+<header class="desktop-header container">
+    <div class="header__content">
+        <div class="burger-menu">
+            <div class="burger-menu__item1"></div>
+            <div class="burger-menu__item2"></div>
+            <div class="burger-menu__item3"></div>
+        </div>
+        <a class="logo bold">CLOTH & FASHION</a>
+        <div class="custom-links">
+            <a class="header__text">LOGIN</a>
+            <div class="cart">
+                <span class="count bold">88</span>
+                <img src="images/iconCarrinho.png" alt="cart">
+            </div>
+        </div>
+    </div>
+    <div class="modal-content menu">
+        <header class="menu__header">
+            <div class="header__content">
+                <a href="#" class="header__title">menu</a>
+                <button class="close-modal">&#10006;</button>
+            </div>
+        </header>
+        <section class="menu__search">
+            <input type="search" placeholder="O QUE ESTÁ PROCURANDO?" class="search__input">
+            <button class="search__button">
+                <img src="images/search.png" alt="search" class="search-img">
+            </button>
+        </section>
+        <ul class="menu__content">
+            <li class="menu__link link">
+                <p class="link__content">
+                    <span class="link__title">sobre</span>
+                    <span class="link__open">+</span>
+                </p>
+                <ul class="sub-menu">
+                    <li class="sub-menu">
+                        <span class="link__title">categoria</span>
+                        <span class="link__open">&rsaquo;</span>
+                    </li>
+                    <li class="sub-menu">
+                        <span class="link__title">categoria</span>
+                        <span class="link__open">&rsaquo;</span>
+                    </li>
+                    <li class="sub-menu">
+                        <span class="link__title">categoria</span>
+                        <span class="link__open">&rsaquo;</span>
+                    </li>
+                    <li class="sub-menu">
+                        <span class="link__title">categoria</span>
+                        <span class="link__open">&rsaquo;</span>
+                    </li>
+                </ul>
+            </li>
+            <li class="menu__link link">
+                <p class="link__content">
+                    <span class="link__title">COLEÇÕES</span>
+                    <span class="link__open">+</span>
+                </p>
+                <ul class="sub-menu">
+                    <li class="sub-menu">
+                        <span class="link__title">categoria</span>
+                        <span class="link__open">&rsaquo;</span>
+                    </li>
+                    <li class="sub-menu">
+                        <span class="link__title">categoria</span>
+                        <span class="link__open">&rsaquo;</span>
+                    </li>
+                    <li class="sub-menu">
+                        <span class="link__title">categoria</span>
+                        <span class="link__open">&rsaquo;</span>
+                    </li>
+                    <li class="sub-menu">
+                        <span class="link__title">categoria</span>
+                        <span class="link__open">&rsaquo;</span>
+                    </li>
+                </ul>
+            </li>
+            <li class="menu__link link">
+                <p class="link__content">
+                    <span class="link__title">CATEGORIA</span>
+                    <span class="link__open">+</span>
+                </p>
+                <ul class="sub-menu">
+                    <li class="sub-menu">
+                        <span class="link__title">categoria</span>
+                        <span class="link__open">&rsaquo;</span>
+                    </li>
+                    <li class="sub-menu">
+                        <span class="link__title">categoria</span>
+                        <span class="link__open">&rsaquo;</span>
+                    </li>
+                    <li class="sub-menu">
+                        <span class="link__title">categoria</span>
+                        <span class="link__open">&rsaquo;</span>
+                    </li>
+                    <li class="sub-menu">
+                        <span class="link__title">categoria</span>
+                        <span class="link__open">&rsaquo;</span>
+                    </li>
+                </ul>
+            </li>
+            <li class="menu__link link">
+                <p class="link__content">
+                    <span class="link__title">LOOKS</span>
+                    <span class="link__open">+</span>
+                </p>
+                <ul class="sub-menu">
+                    <li class="sub-menu">
+                        <span class="link__title">categoria</span>
+                        <span class="link__open">&rsaquo;</span>
+                    </li>
+                    <li class="sub-menu">
+                        <span class="link__title">categoria</span>
+                        <span class="link__open">&rsaquo;</span>
+                    </li>
+                    <li class="sub-menu">
+                        <span class="link__title">categoria</span>
+                        <span class="link__open">&rsaquo;</span>
+                    </li>
+                    <li class="sub-menu">
+                        <span class="link__title">categoria</span>
+                        <span class="link__open">&rsaquo;</span>
+                    </li>
+                </ul>
+            </li>
+            <li class="menu__link link">
+                <p class="link__content">
+                    <span class="link__title">CONTATO</span>
+                    <span class="link__open">+</span>
+                </p>
+                <ul class="sub-menu">
+                    <li class="sub-menu">
+                        <span class="link__title">categoria</span>
+                        <span class="link__open">&rsaquo;</span>
+                    </li>
+                    <li class="sub-menu">
+                        <span class="link__title">categoria</span>
+                        <span class="link__open">&rsaquo;</span>
+                    </li>
+                    <li class="sub-menu">
+                        <span class="link__title">categoria</span>
+                        <span class="link__open">&rsaquo;</span>
+                    </li>
+                    <li class="sub-menu">
+                        <span class="link__title">categoria</span>
+                        <span class="link__open">&rsaquo;</span>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        <footer class="menu__footer">
+            <ul class="footer-items">
+                <li><a href="#" class="footer-item"><img src="images/fb-b.png" alt="facebook"></a></li>
+                <li><a href="#" class="footer-item"><img src="images/twi-b.png" alt="twitter"></a></li>
+                <li><a href="#" class="footer-item"><img src="images/insta-b.png" alt="instagram"></a></li>
+            </ul>
+        </footer>
+    </div>
+    <div class="overlay"></div>
+    <div class="modal-content basket">
+        <header class="basket__header">
+            <div class="header__content">
+                <a href="#" class="header__title">meu carrinho</a>
+                <div class="cart">
+                    <a href="#">
+                        <span class="count bold">88</span>
+                        <img src="images/iconCarrinho.png" alt="cart">
+                    </a>
+                </div>
+            </div>
+        </header>
+        <div class="basket-content">
+            <div class="product-about">
+                <img src="images/prod_3.jpg" alt="img-card" class="product-img">
+                <div class="product-info">
+                    <div class="product-info">
+                        <h1 class="product-name">Nome do Produto</h1>
+                        <button class="product-delete">X</button>
+                    </div>
+                    <div class="product-color"></div>
+                    <div class="product-price">
+                        <div class="counter">
+                            <button class="minus">-</button>
+                            <input type="number" class="product-count" value="88" min="1" max="100">
+                            <button class="add">+</button>
+                        </div>
+                        <div class="total-product-price">R$88,88</div>
+                    </div>
+                </div>
+            </div>
+            <div class="product-about">
+                <img src="images/prod_3.jpg" alt="img-card" class="product-img">
+                <div class="product-info">
+                    <div class="product-info">
+                        <h1 class="product-name">Nome do Produto</h1>
+                        <button class="product-delete">X</button>
+                    </div>
+                    <div class="product-color"></div>
+                    <div class="product-price">
+                        <div class="counter">
+                            <button class="minus">-</button>
+                            <input type="number" class="product-count" value="88" min="1" max="100">
+                            <button class="add">+</button>
+                        </div>
+                        <div class="total-product-price">R$88,88</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="total-price">
+            <span class="total-price__title">total</span>
+            <span class="price">R$88,88</span>
+        </div>
+        <footer class="basket__footer">
+            <div class="footer-block">CONTINUAR COMPRANDO</div>
+            <div class="footer-checkout">
+                <span>checkout</span>
+                <span class="symbol">&rsaquo;</span>
+            </div>
+        </footer>
+    </div>
+</header>
+
+<main>
+    <section class="flag container">
+        <img  src="images/flag-l.png" alt="flag" class="flag__item">
+        <p class="flag__text">PRODUTOS EM DESTAQUE</p>
+        <img  src="images/flag-r.png" alt="flag" class="flag__item">
+    </section>
+    <section class="main-slider container">
+        <div class="wrapper-img">
+            <div class="carousel">
+                <div class="product">
+                    <img src="images/prod_1.jpg" alt="product" class="product__img">
+                    <img src="images/prod_3-b.jpg" alt="product" class="product__img back">
+                    <img src="images/sale.png" alt="sale" class="sale">
+                    <div class="product__name">comprar</div>
+                    <p class="product__price">R$88,88</p>
+                    <p class="product__new-price bold">R$78,88</p>
+                </div>
+                <div class="product">
+                    <img src="images/prod_2.jpg" alt="product" class="product__img">
+                    <img src="images/prod_3-b.jpg" alt="product" class="product__img back">
+                    <div class="product__name">comprar</div>
+                    <p class="product__price">R$88,88</p>
+                    <p class="product__new-price bold">2X R$44,44</p>
+                </div>
+                <div class="product" >
+
+                    <img src="images/prod_3.jpg" alt="product" class="product__img">
+                    <img src="images/prod_3-b.jpg" alt="product" class="product__img back">
+                    <img src="images/sale.png" alt="sale" class="sale">
+                    <div class="product__name">comprar</div>
+                    <p class="product__price">R$88,88</p>
+                    <p class="product__new-price bold">R$78,88</p>
+                </div>
+                <div class="product" >
+                    <img src="images/prod_4.jpg" alt="product" class="product__img">
+                    <img src="images/prod_3-b.jpg" alt="product" class="product__img back">
+
+                    <div class="product__name">comprar</div>
+                    <p class="product__price">R$88,88</p>
+                    <p class="product__new-price bold">2X R$44,44</p>
+                </div>
+                <div class="product">
+                    <img src="images/prod_5.jpg" alt="product" class="product__img">
+                    <img src="images/prod_3-b.jpg" alt="product" class="product__img back">
+                    <img src="images/sale.png" alt="sale" class="sale">
+                    <div class="product__name">comprar</div>
+                    <p class="product__price">R$88,88</p>
+                    <p class="product__new-price bold">R$78,88</p>
+                </div>
+                <div class="product">
+                    <img src="images/prod_6.jpg" alt="card" class="product__img">
+                    <img src="images/prod_3-b.jpg" alt="product" class="product__img back">
+
+                    <div class="product__name">comprar</div>
+                    <p class="product__price">R$88,88</p>
+                    <p class="product__new-price bold">2X R$44,44</p>
+                </div>
+            </div>
+        </div>
+        <div class="button-wrapper">
+            <button data-action="slideLeft" class="slider-btn btn-left">&#10094</button>
+            <button data-action="slideRight" class="slider-btn btn-right">&#10095;</button>
+        </div>
+    </section>
+    <section class="separator">
+        <img src="images/icon.png" alt="icon" class="separator__icon">
+    </section>
+    <section class="gallery container">
+        <section class="gallery__row">
+            <div class="gallery__item first-block">
+                <img src="images/jaquetas.jpg" alt="" class="gallery__img">
+                <p class="block__text bold">JAQUETAS</p>
+                <div class="overlay-img"></div>
+            </div>
+            <div class="gallery__item second-block">
+                <img src="images/shorts.jpg" alt="" class="gallery__img">
+                <p class="block__text bold">SHORTS</p>
+                <div class="overlay-img"></div>
+            </div>
+        </section>
+        <section class="gallery__row">
+            <div class="gallery__item third-block">
+                <img src="images/corta-vento.jpg" alt="" class="gallery__img">
+                <p class="block__text bold">CORTA-VENTO</p>
+                <div class="overlay-img"></div>
+            </div>
+            <div class="gallery__item four-block">
+                <img src="images/camisas.jpg" alt="" class="gallery__img">
+                <p class="block__text bold">CAMISAS</p>
+                <div class="overlay-img"></div>
+            </div>
+        </section>
+        <section class="gallery__row">
+            <div class="gallery__item six-block">
+                <img src="images/qalqas.jpg" alt="" class="gallery__img">
+                <p class="block__text bold">CALÇAS</p>
+                <div class="overlay-img"></div>
+            </div>
+            <div class="gallery__item seven-block">
+                <img src="images/camisetas.jpg" alt="" class="gallery__img">
+                <p class="block__text bold">CAMISETAS</p>
+                <div class="overlay-img"></div>
+            </div>
+        </section>
+    </section>
+    <section class="flag container">
+        <img src="images/flag-l.png" alt="flag" class="flag__item">
+        <p class="flag__text">GALERIA DO INSTAGRAM</p>
+        <img src="images/flag-r.png" alt="flag" class="flag__item">
+    </section>
+    <section class="insta-gallery container">
+        <div class="wrapper-all">
+            <div class="wrapper-all__carousel">
+
+            <div class="wrapper-img">
+                <div class="block">
+                    <img class="img-insta cover" src="images/insta-1.jpg" alt="photo">
+                    <div class="block-bg">
+                        <img class="img-like" src="images/like.png" alt="like">
+                        <p class="count-likes bold">1.323 likes</p>
+                    </div>
+                </div>
+            </div>
+            <div class="wrapper-img">
+                <div class="block">
+                    <img class="img-insta cover" src="images/insta-2.jpg" alt="photo">
+                    <div class="block-bg">
+                        <img class="img-like" src="images/like.png" alt="like">
+                        <p class="count-likes bold">1.323 likes</p>
+                    </div>
+                </div>
+            </div>
+            <div class="wrapper-img">
+                <div class="block">
+                    <img class="img-insta cover" src="images/insta-3.jpg" alt="photo">
+                    <div class="block-bg">
+                        <img class="img-like" src="images/like.png" alt="like">
+                        <p class="count-likes bold">1.323 likes</p>
+                    </div>
+                </div>
+            </div>
+            <div class="wrapper-img">
+                <div class="block">
+                    <img class="img-insta cover" src="images/insta-4.jpg" alt="photo">
+                    <div class="block-bg">
+                        <img class="img-like" src="images/like.png" alt="like">
+                        <p class="count-likes bold">1.323 likes</p>
+                    </div>
+                </div>
+            </div>
+            <div class="wrapper-img">
+                <div class="block">
+                    <img class="img-insta cover" src="images/insta-5.jpg" alt="photo">
+                    <div class="block-bg">
+                        <img class="img-like" src="images/like.png" alt="like">
+                        <p class="count-likes bold">1.323 likes</p>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
+    <section class="flag container">
+        <img src="images/flag-l.png" alt="flag" class="flag__item">
+        <p class="flag__text">QUEM USA</p>
+        <img src="images/flag-r.png" alt="flag" class="flag__item">
+    </section>
+    <section class="insta-gallery quem-usa container">
+        <div class="wrapper-all">
+            <div class="wrapper-all__carousel">
+
+            <div class="wrapper-img bottom-row">
+                <div class="block">
+                    <img class="img-insta cover" src="images/insta-6.jpg" alt="photo">
+                    <div class="block-bg">
+                        <p class="count-likes bold">David Guetta</p>
+                    </div>
+                </div>
+            </div>
+            <div class="wrapper-img bottom-row">
+                <div class="block">
+                    <img class="img-insta cover" src="images/insta-7.jpg" alt="photo">
+                    <div class="block-bg">
+                        <p class="count-likes bold">David Guetta</p>
+                    </div>
+                </div>
+            </div>
+            <div class="wrapper-img bottom-row">
+                <div class="block">
+                    <img class="img-insta cover" src="images/insta-8.jpg" alt="photo">
+                    <div class="block-bg">
+                        <p class="count-likes bold">David Guetta</p>
+                    </div>
+                </div>
+            </div>
+            <div class="wrapper-img bottom-row">
+                <div class="block">
+                    <img class="img-insta cover" src="images/insta-9.jpg" alt="photo">
+                    <div class="block-bg">
+                        <p class="count-likes bold">David Guetta</p>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
+    <section class="buttons container">
+        <button class="news-letters">newsletter</button>
+        <button class="basic-btn">nome</button>
+        <button class="basic-btn">ENDEREÇO DE EMALL</button>
+        <button class="codastrar">codastrar</button>
+    </section>
+</main>
+<footer class="mobile-footer container">
+    <a href="#"><img src="images/enext.png" alt="logo" class="footer-logo"></a>
+</footer>
+<footer class="desktop-footer container">
+    <nav class="footer-navigations">
+        <ul class="footer-links">
+            <li><a href="#" class="footer-link">SOBRE</a></li>
+            <li><a href="#" class="footer-link">CONTATO</a></li>
+            <li><a href="#" class="footer-link">TERMOS & CONDIÇÕE</a></li>
+            <li><a href="#" class="footer-link">POLÍTICA DE PRIVACIDADE</a></li>
+        </ul>
+        <ul class="footer-items">
+            <li><a href="#" class="footer-item"><img src="images/fb.png" alt="facebook"></a></li>
+            <li><a href="#" class="footer-item"><img src="images/twi.png" alt="twitter"></a></li>
+            <li><a href="#" class="footer-item"><img src="images/insta.png" alt="instagram"></a></li>
+        </ul>
+    </nav>
+</footer>
+</body>
+</html>
+
