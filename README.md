@@ -1,8 +1,12 @@
-1. Builds the app:
+1. Install all dependencies
+
+### `npm install`
+
+2. Builds the app:
 
 ### `webpack  --mode production`
 
-2.Runs the app:
+3.Runs the app:
 
 ### `webpack-dev-server --watch --inline --progress --port 3000 --open --config webpack.config.js --mode production`
 
